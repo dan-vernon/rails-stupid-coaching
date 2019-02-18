@@ -13,3 +13,102 @@
  *= require_tree .
  *= require_self
  */
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.25em;
+  font-family: arial;
+  text-align: center;
+}
+
+.box {
+  width: 60vw;
+  margin: 50px auto;
+  background: #00a8b5;
+  padding: 20px;
+  font-weight: 900;
+  color: #ffffff;
+  font-family: arial;
+  position: relative;
+}
+
+.sb1 {
+  background: #774898;
+  text-align: right;
+}
+
+.sb2 {
+  text-align: left
+}
+
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #774898;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #774898;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 6px;
+}
+
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00a8b5;
+  border-top: 10px solid #00a8b5;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+
+.sb3:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: 19px;
+  bottom: -19px;
+}
+
+.sb4:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00bfb6;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  right: 19px;
+  bottom: -19px;
+}
+
+.chat-input {
+background: transparent;
+border: 0;
+font-weight: 900;
+color: #fff;
+font-family: arial;
+
+ }
+
+::-webkit-input-placeholder {
+  color: #d0cdfa;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #774898;
+}
